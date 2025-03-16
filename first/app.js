@@ -14,3 +14,8 @@ let arrey1=[];
 for(let elemint =0;elemint<7;elemint++){
     console.log(elemint)
 }
+let arry2=[];
+for(let n = 0;n<9 ;n++){
+    let respans = pramt("یک عدد بنوسید");
+
+}
