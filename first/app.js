@@ -14,8 +14,12 @@ let arrey1=[];
 for(let elemint =0;elemint<7;elemint++){
     console.log(elemint)
 }
+console.log("-------")
 let arry2=[];
 for(let n = 0;n<9 ;n++){
-    let respans = pramt("یک عدد بنوسید");
-
+    let respans = +prompt("inter a number");
+    arry2.push(respans);
+}
+for(let m of arry2){
+    console.log(m);
 }
