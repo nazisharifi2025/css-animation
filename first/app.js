@@ -24,3 +24,4 @@ for(let m of arry2){
     console.log(m);
 }
 let a ="ahmad";
+let b =[1,"ahmad",2,"ali",3,"mahmod"];
