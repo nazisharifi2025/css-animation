@@ -44,3 +44,8 @@ let naz =a-b-c;
 return naz;
 }
 console.log(12,3,5);
+function i(g,d,f){
+let na =g-d-f;
+return na;
+}
+console.log(11,13,15);
