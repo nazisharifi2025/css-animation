@@ -32,10 +32,10 @@ for(let i=0; i<10;i++){
     else if(i=7){
         console.log("hello");
     }
-    // else if(i===10){
-    //     console.log("he")
-    // }
-    // else{
-    //     console.log("how are you")
-    // }
+    else if(i===10){
+        console.log("he")
+    }
+    else{
+        console.log("how are you")
+    }
 }
