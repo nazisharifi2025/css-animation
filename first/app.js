@@ -49,3 +49,5 @@ let na =g-d-f;
 return na;
 }
 console.log(11,13,15);
+let num= "nazi";
+let nuMber= 23;
