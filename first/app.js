@@ -25,3 +25,17 @@ for(let m of arry2){
 }
 let a ="ahmad";
 let b =[1,"ahmad",2,"ali",3,"mahmod"];
+for(let i=0; i<10;i++){
+    if(i<5){
+        console.log("hi")
+    }
+    else if(i=7){
+        console.log("hello");
+    }
+    // else if(i===10){
+    //     console.log("he")
+    // }
+    // else{
+    //     console.log("how are you")
+    // }
+}
