@@ -23,3 +23,4 @@ for(let n = 0;n<9 ;n++){
 for(let m of arry2){
     console.log(m);
 }
+let a ="ahmad";
