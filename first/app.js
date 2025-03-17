@@ -39,3 +39,8 @@ for(let i=0; i<10;i++){
         console.log("how are you")
     }
 }
+function item(a,b,c){
+let naz =a-b-c;
+return naz;
+}
+console.log(12,3,5)
