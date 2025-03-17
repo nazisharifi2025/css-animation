@@ -43,4 +43,4 @@ function item(a,b,c){
 let naz =a-b-c;
 return naz;
 }
-console.log(12,3,5)
+console.log(12,3,5);
