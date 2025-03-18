@@ -81,8 +81,8 @@ for(let i=0;i<7;i++){
     if(i<5){
         confirm.log("good");
     }
-    // else if(i=5){
-    //     console.log("iam nazi");
-    // }
+    else if(i=5){
+        console.log("iam nazi");
+    }
 
 }
