@@ -62,3 +62,6 @@ let lite = 8;
 if(lite === 7){
     console.log("hi")
 }
+else if(lite==="9"){
+    console.log("he")
+}
