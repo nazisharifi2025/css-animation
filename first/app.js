@@ -71,3 +71,6 @@ else if(lite === 5){
 else if(lite===9){
     console.log("how are you");
 }
+else{
+    console.log("not a number")
+}
