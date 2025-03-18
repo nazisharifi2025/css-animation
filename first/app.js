@@ -58,3 +58,7 @@ function item(a,b){
 }
 console.log(3,5);
 alert(item(90,43));
+let lite = 8;
+if(lite === 7){
+    console.log("hi")
+}
