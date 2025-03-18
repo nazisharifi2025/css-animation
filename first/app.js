@@ -52,9 +52,9 @@ console.log(11,13,15);
 let num= "nazi";
 let nuMber= 23;
 let ali ="nazi"
-function name(a,b){
+function item(a,b){
     let i = a/b;
     return i;
 }
 console.log(3,5);
-alert(name(90,43))
+alert(item(90,43));
