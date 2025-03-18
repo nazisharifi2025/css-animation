@@ -52,3 +52,8 @@ console.log(11,13,15);
 let num= "nazi";
 let nuMber= 23;
 let ali ="nazi"
+function name (a,b){
+    let i = a/b;
+    return i;
+}
+console.log(3,5);
