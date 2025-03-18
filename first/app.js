@@ -65,3 +65,6 @@ if(lite === 7){
 else if(lite==="9"){
     console.log("he")
 }
+else if(lite === 5){
+    console.log("hello");
+}
