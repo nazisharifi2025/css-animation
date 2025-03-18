@@ -68,3 +68,6 @@ else if(lite==="9"){
 else if(lite === 5){
     console.log("hello");
 }
+else if(lite===9){
+    console.log("how are you");
+}
