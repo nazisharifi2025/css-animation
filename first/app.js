@@ -84,5 +84,8 @@ for(let i=0;i<7;i++){
     else if(i=5){
         console.log("iam nazi");
     }
+    else{
+        console.log("no it is");
+    }
 
 }
