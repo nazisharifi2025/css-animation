@@ -29,7 +29,7 @@ for(let i=0; i<10;i++){
     if(i<5){
         console.log("hi")
     }
-    else if(i=7){
+    else if(i==7){
         console.log("hello");
     }
     else if(i===10){
@@ -39,53 +39,9 @@ for(let i=0; i<10;i++){
         console.log("how are you")
     }
 }
-function item(a,b,c){
-let naz =a-b-c;
-return naz;
-}
-console.log(12,3,5);
-function i(g,d,f){
-let na =g-d-f;
-return na;
-}
-console.log(11,13,15);
-let num= "nazi";
-let nuMber= 23;
-let ali ="nazi"
-function item(a,b){
-    let i = a/b;
-    return i;
-}
-console.log(3,5);
-alert(item(90,43));
-let lite = 8;
-if(lite === 7){
-    console.log("hi")
-}
-else if(lite==="9"){
-    console.log("he")
-}
-else if(lite === 5){
-    console.log("hello");
-}
-else if(lite===3){
-    console.log("git hab");
-}
-else if(lite===9){
-    console.log("how are you");
-}
-else{
-    console.log("not a number")
-}
-for(let i=0;i<7;i++){
-    if(i<5){
-        confirm.log("good");
-    }
-    else if(i=5){
-        console.log("iam nazi");
-    }
-    else{
-        console.log("no it is");
-    }
-
+// while
+let git = 0;
+while(git<6){
+    console.log("Hi");
+    git++
 }
