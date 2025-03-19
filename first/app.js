@@ -16,7 +16,7 @@ for(let elemint =0;elemint<7;elemint++){
 }
 console.log("-------")
 let arry2=[];
-for(let n = 0;n<9 ;n++){
+for(let n = 0;n<4 ;n++){
     let respans = +prompt("inter a number");
     arry2.push(respans);
 }
@@ -46,12 +46,17 @@ while(git<6){
     git++
 }
 let now = 0;
-while (naw<8){
+while (now<8){
     console.log("naz");
-    naw+=2
+    now+=2
 }
 let i=1;
 while(i<9){
     console.log("not");
     i*=2;
+}
+let f=7;
+while(f>0){
+    console.log("page");
+    f--;
 }
