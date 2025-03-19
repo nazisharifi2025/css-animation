@@ -50,3 +50,8 @@ while (naw<8){
     console.log("naz");
     naw+=2
 }
+let i=1;
+while(i<9){
+    console.log("not");
+    i*=2;
+}
