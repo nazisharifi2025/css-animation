@@ -45,3 +45,8 @@ while(git<6){
     console.log("Hi");
     git++
 }
+let now = 0;
+while (naw<8){
+    console.log("naz");
+    naw+=2
+}
