@@ -60,3 +60,8 @@ while(f>0){
     console.log("page");
     f--;
 }
+let r=9;
+while(r>0){
+    console.log("git hup");
+    r-=2;
+}
