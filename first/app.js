@@ -65,3 +65,8 @@ while(r>0){
     console.log("git hup");
     r-=2;
 }
+let l=0;
+while(l<10){
+    console.log("jannnnn");
+    l++
+}
