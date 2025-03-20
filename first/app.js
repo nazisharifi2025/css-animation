@@ -70,3 +70,8 @@ while(l<10){
     console.log("jannnnn");
     l++
 }
+let o=18;
+do{
+    console.log("Happy new year");
+}
+while(o<20);
