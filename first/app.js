@@ -78,4 +78,6 @@ while(o<20);
 let person ={
     name5="bahar",
 }
-for(let g in )
+for(let g in person){
+
+}
