@@ -341,6 +341,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -428,6 +431,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-28 {
+    height: calc(var(--spacing) * 28);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -440,11 +446,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-28 {
+    width: calc(var(--spacing) * 28);
   }
   .w-full {
     width: 100%;
