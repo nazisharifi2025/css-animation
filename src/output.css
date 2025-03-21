@@ -434,6 +434,24 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[450px\] {
+    height: 450px;
+  }
+  .h-\[550px\] {
+    height: 550px;
+  }
+  .h-\[750px\] {
+    height: 750px;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -446,11 +464,23 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-28 {
     width: calc(var(--spacing) * 28);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[150px\] {
+    width: 150px;
   }
   .w-full {
     width: 100%;
