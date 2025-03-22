@@ -75,9 +75,3 @@ do{
     console.log("Happy new year");
 }
 while(o<20);
-let person ={
-    name5="bahar",
-}
-for(let g in person){
-
-}
