@@ -28,4 +28,9 @@ do{
     console.log("biby");
 }
 while(t<20);
-
+let nine={
+ name:"nazi",
+ FatherName:"Hadi",
+ LastName:"Sharifi",
+    
+}
