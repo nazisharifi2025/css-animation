@@ -35,3 +35,4 @@ let nine={
     Age:18,
     birthdey:2006,
 }
+console.log(nine[FatherName])
