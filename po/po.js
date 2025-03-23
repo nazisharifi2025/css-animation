@@ -32,5 +32,6 @@ let nine={
  name:"nazi",
  FatherName:"Hadi",
  LastName:"Sharifi",
-    
+    Age:18,
+    birthdey:2006,
 }
