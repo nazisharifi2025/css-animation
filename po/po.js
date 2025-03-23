@@ -36,5 +36,5 @@ let nine={
     birthdey:2006,
 }
 for(let key in nine){
-    console.log(key)
+    console.log(nine["FatherName"]);
 }
