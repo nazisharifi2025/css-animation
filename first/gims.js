@@ -43,3 +43,6 @@ let a = 90+90;
 let b =function(){
     console.log(90+90);
 }
+function add(){
+    console.log(2+2); 
+}
