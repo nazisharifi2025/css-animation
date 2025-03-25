@@ -1,4 +1,4 @@
-// const startBtn =document.getElementById("startGames");
+const startBtn =document.getElementById("startGames");
 // function start(){
 //     // console.log("Gem is started....");
 //     prompt()
