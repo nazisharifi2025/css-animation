@@ -3,15 +3,22 @@ let computerChoice="ROCK";
 const roke = "ROCK";
 const SCISSORS="SCESSORS";
 const PAPER="PAPER";
-
+let winner = "";
 let determineWinner = function(cChoice,pChoice){
     if(
     (pChoice === ROCK && cChoice === SCISSORS)||
     (pChoice === PAPER &&  cChoice===ROCK)||
     (pChoice=== SCISSORS && cChoice===PAPER)
      ) {
-
+        winner = "PLAYER WINS";
     }
+    else if(cChoice === pChoice){
+        winner = "Draw"
+    }
+    else{
+        winner = "Cumputer wins"
+    }
+    return winner;
 }
 function start(){
     // console.log("Gem is started....");
