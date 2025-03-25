@@ -8,13 +8,11 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-700: oklch(0.505 0.213 27.518);
-    --color-amber-50: oklch(0.987 0.022 95.277);
     --color-green-800: oklch(0.448 0.119 151.328);
     --color-purple-300: oklch(0.827 0.119 306.383);
+    --color-purple-500: oklch(0.627 0.265 303.9);
     --color-purple-800: oklch(0.438 0.218 303.724);
-    --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-400: oklch(0.707 0.022 261.325);
-    --color-gray-800: oklch(0.278 0.033 256.848);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -366,6 +364,9 @@
   .my-auto {
     margin-block: auto;
   }
+  .mr-\[70px\] {
+    margin-right: 70px;
+  }
   .mr-\[160px\] {
     margin-right: 160px;
   }
@@ -495,8 +496,8 @@
   .w-\[30\%\] {
     width: 30%;
   }
-  .w-\[40\%\] {
-    width: 40%;
+  .w-\[35\%\] {
+    width: 35%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -1122,11 +1123,8 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-black {
-    border-color: var(--color-black);
-  }
-  .border-gray-800 {
-    border-color: var(--color-gray-800);
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
@@ -1143,17 +1141,11 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
-  }
   .bg-bgcon {
     background-color: var(--color-bgcon);
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-gray-300 {
-    background-color: var(--color-gray-300);
   }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
@@ -1184,9 +1176,6 @@
   }
   .bg-\[url\(\.\.\/first\/imgs\/img1\.jpg\)\] {
     background-image: url(../first/imgs/img1.jpg);
-  }
-  .bg-\[url\(\.\.\/first\/imgs\/img2\.jpg\)\] {
-    background-image: url(../first/imgs/img2.jpg);
   }
   .bg-none {
     background-image: none;
@@ -1959,6 +1948,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-purple-300);
+      }
+    }
+  }
+  .hover\:bg-purple-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-purple-500);
       }
     }
   }
