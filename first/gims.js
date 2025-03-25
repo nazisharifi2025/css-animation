@@ -12,7 +12,10 @@ function start(){
 computerChoice= ROCK;
    }
    else if(randomNumber<0.66){
-    
+    computerChoice=PAPER;
+   }
+   else{
+    computerChoice=SCISSORS;
    }
 }
 
