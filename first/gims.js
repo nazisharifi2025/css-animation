@@ -1,6 +1,6 @@
 const startBtn =document.getElementById("startGames");
 let computerChoice="ROCK";
-const roke = "ROCK";
+const ROCK = "ROCK";
 const SCISSORS="SCESSORS";
 const PAPER="PAPER";
 let winner = "";
@@ -22,7 +22,7 @@ let determineWinner = function(cChoice,pChoice){
 }
 function start(){
     // console.log("Gem is started....");
-   let playerChoice= prompt(`${ROCK},${PAPER} OR ${SCISSORS}`).toUpperCase();
+   let playerChoice= prompt(`${ROCK},${PAPER} or ${SCISSORS}`).toUpperCase();
    let  randomNumber=Math.random();
    if(randomNumber<0.33){
 computerChoice= ROCK;
@@ -38,3 +38,8 @@ computerChoice= ROCK;
 }
 
 startBtn.addEventListener("click",start);
+// EXPRESSION
+let a = 90+90;
+let b =function(){
+    console.log(90+90);
+}
