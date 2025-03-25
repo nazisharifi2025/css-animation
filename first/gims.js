@@ -4,6 +4,15 @@ const roke = "ROCK";
 const SCISSORS="SCESSORS";
 const PAPER="PAPER";
 
+let determineWinner = function(cChoice,pChoice){
+    if(
+    (pChoice === ROCK && cChoice === SCISSORS)||
+    (pChoice === PAPER &&  cChoice===ROCK)||
+    (pChoice=== SCISSORS && cChoice===PAPER)
+     ) {
+
+    }
+}
 function start(){
     // console.log("Gem is started....");
    let playerChoice= prompt(`${ROCK},${PAPER} OR ${SCISSORS}`);
