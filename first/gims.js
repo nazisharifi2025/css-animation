@@ -1,3 +1,4 @@
+add();
 const startBtn =document.getElementById("startGames");
 let computerChoice="ROCK";
 const ROCK = "ROCK";
