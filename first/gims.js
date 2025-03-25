@@ -22,7 +22,7 @@ let determineWinner = function(cChoice,pChoice){
 }
 function start(){
     // console.log("Gem is started....");
-   let playerChoice= prompt(`${ROCK},${PAPER} OR ${SCISSORS}`);
+   let playerChoice= prompt(`${ROCK},${PAPER} OR ${SCISSORS}`).toUpperCase();
    let  randomNumber=Math.random();
    if(randomNumber<0.33){
 computerChoice= ROCK;
@@ -33,6 +33,8 @@ computerChoice= ROCK;
    else{
     computerChoice=SCISSORS;
    }
+  let result= determineWinner(computerChoice , playerChoice);
+  console.log(result);
 }
 
 startBtn.addEventListener("click",start);
