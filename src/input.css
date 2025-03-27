@@ -1,4 +1,8 @@
 @import "tailwindcss";
 @theme{
     --color-bgcon: rgba(255,255,255,0.3);
+    --color-mint-500: oklch(0.72 0.11 178);
 }
+:root {
+    --acme-canvas-color: oklch(0.967 0.003 264.542);
+  }
