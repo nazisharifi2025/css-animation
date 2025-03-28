@@ -8,4 +8,11 @@ bars.addEventListener("click" ,()=>{
     verticalNav.classList.remove("hidden");
     bars.style.display="none";
     close.style.display="block";
-})
+});
+close.addEventListener("click",()=>{
+    horizontaINav.classList.add("w-full");
+    horizontaINav.classList.remove("w-[75%]");
+    verticalNav.classList.add("hidden");
+    bars.style.display="block";
+    close.style.display="none";
+});
