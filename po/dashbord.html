@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body>
-    <div class="relative  bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700">
+<body class="bg-gray-200">
+    <!-- <div class="relative  bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700"> -->
         <!-- <div id="hnav" class="float-end h-16 w-full bg-gray-700 text-white flex justify-between leading-16 items-center px-4 ">
             <h2>Sharifi High School</h2>
             <span id="bars" class="material-symbols-outlined hover:cursor-pointer" >
@@ -19,12 +19,36 @@
                     close
                     </span>
         </div> -->
-        <div id="hnav" class="float-end h-16 w-[100%] bg-white flex space-x-8 leading-16 items-center px-4 ">
+        <div class="flex">
+        <div class="w-[5%] h-screen bg-white flex flex-col gap-12 pt-6 justify-center mx-auto">
+            <span class="material-symbols-outlined">
+                stacks
+                </span>
+                <span class="material-symbols-outlined">
+                    house
+                    </span>
+                    <span class="material-symbols-outlined">
+                        apps
+                        </span>
+                        <span class="material-symbols-outlined">
+                            shopping_cart_checkout
+                            </span>
+                            <span class="material-symbols-outlined">
+                                forum
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    menu_open
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        disc_full
+                                        </span>
+        </div>
+        <div id="hnav" class="float-end h-16 w-[95%] bg-white flex space-x-8 leading-16 items-center px-4 ">
             <span id="bars" class="material-symbols-outlined hover:cursor-pointer" >
                 menu
                 </span>
                 <input type="text" id="input" placeholder="Search Project" class=" pl-9 w-[30%] rounded-2xl h-[30px] relative outline-0 border border-white ">
-                <span id="icon" class="material-symbols-outlined absolute left-20">
+                <span id="icon" class="material-symbols-outlined absolute left-30">
                     search
                     </span>
                     <div class="flex space-x-3">
@@ -34,7 +58,7 @@
                             stat_minus_1
                             </span>
                     </div>
-                    <div class="flex space-x-12">
+                    <div class="flex space-x-9">
                     <span class="material-symbols-outlined">
                         screenshot_frame_2
                         </span>
@@ -47,11 +71,12 @@
                                 <span class="material-symbols-outlined">
                                     power_settings_new
                                     </span>
-                                    <span class="material-symbols-outlined ml-14">
+                                    <span class="material-symbols-outlined ml-10">
                                         list
                                         </span>
                 </div>
         </div>
+
         <div id="vnav" class="hidden h-screen w-[15%] bg-origin-border text-white absolute top-0 left-0 bg-gray-700">
             <ul class="flex flex-col gap-5 mx-2 mt-8">
                 <li><a href="#">
@@ -77,6 +102,7 @@
             </ul>
         </div>
     </div>
+</div>
     <!-- 
     <div class="h-14 bg-linear-to-r from-cyan-500 to-blue-500"></div>
 <div class="h-14 bg-linear-to-t from-sky-500 to-indigo-500"></div>
