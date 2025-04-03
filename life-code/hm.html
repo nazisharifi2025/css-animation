@@ -43,22 +43,22 @@
         <div id="second" class="hand second absolute bg-red-500"></div>
         </div>
         <script>
-            function updateClock(){
-                const naw = new Date();
-                const hours = now.getHours() % 12;
-                const minutes = now.getMinutes();
-                const seconds = now.getSecounds();
+            // function updateClock(){
+            //     const naw = new Date();
+            //     const hours = now.getHours() % 12;
+            //     const minutes = now.getMinutes();
+            //     const seconds = now.getSecounds();
 
-                const hourDeg = (hours * 30) + (minutes * 0.5);
-                const minuteDeg = (minutes * 6) + (seconds * 0.1);
-                const secondDeg = seconds * 6;
+            //     const hourDeg = (hours * 30) + (minutes * 0.5);
+            //     const minuteDeg = (minutes * 6) + (seconds * 0.1);
+            //     const secondDeg = seconds * 6;
 
-                document.getElementById("hours").style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
-                document.getElementById("minute").style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
-                document.getElementById("second").style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
-            }
-            setInterval(updateClock, 1000);
-            updateClock();
+            //     document.getElementById("hours").style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+            //     document.getElementById("minute").style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+            //     document.getElementById("second").style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+            // }
+            // setInterval(updateClock, 1000);
+            // updateClock();
         </script>
         </body>
 </html>
