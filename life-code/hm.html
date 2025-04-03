@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <link rel="stylesheet" href="../src/output.css">
     <script src="hm.js" defer></script>
+    <style>
+        div.hand{
+            transform-origin: bottom;
+            background: black;
+        }
+
+    </style>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-200">
-    <div class="flex items-center justify-center">
-        <div></div>
-        <div></div>
-        <div ></div>
-    </div>
-</body>
+    <div class="clock flex items-center justify-center relative">
+        <div id="hours" class="hand hour absolute bg-black"></div>
+        <div id="minute" class="hand minute absolute bg-black"></div>
+        <div id="second" class="hand second absolute bg-red-500"></div>
+        </div>
+        <script>
+            function updateClock(){
+                const naw = new Date();
+                const hours = now.getHours() % 12;
+                const minutes = now.getMinutes();
+                const seconds = now.getSecounds();
+
+                const hourDeg = (hours * 30) + (minutes * 0.5);
+                const minuteDeg = (minutes * 6) + (seconds * 0.1);
+                const secondDeg = seconds * 6;
+
+                document.getElementById("hours").style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+                document.getElementById("minute").style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+                document.getElementById("second").style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+            }
+            setInterval(updateClock, 1000);
+            updateClock();
+        </script>
+        </body>
 </html>
