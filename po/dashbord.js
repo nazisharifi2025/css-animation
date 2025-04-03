@@ -3,7 +3,7 @@ const verticalNav = document.getElementById("vnav");
 const bars = document.getElementById("bars");
 const close = document.getElementById("close");
 bars.addEventListener("click" ,()=>{
-    horizontaINav.classList.add("w-[75%]");
+    horizontaINav.classList.add("w-[85%]");
     horizontaINav.classList.remove("w-[95%]");
     verticalNav.classList.remove("ml-[-10%]");
     bars.style.display="none";
