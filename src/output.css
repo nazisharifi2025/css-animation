@@ -262,14 +262,8 @@
   .sticky {
     position: sticky;
   }
-  .bottom-\[50\%\] {
-    bottom: 50%;
-  }
   .left-20 {
     left: calc(var(--spacing) * 20);
-  }
-  .left-\[50\%\] {
-    left: 50%;
   }
   .isolate {
     isolation: isolate;
@@ -580,15 +574,6 @@
   .h-\[40px\] {
     height: 40px;
   }
-  .h-\[50px\] {
-    height: 50px;
-  }
-  .h-\[70px\] {
-    height: 70px;
-  }
-  .h-\[80px\] {
-    height: 80px;
-  }
   .h-\[80vh\] {
     height: 80vh;
   }
@@ -636,15 +621,6 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-\[2px\] {
-    width: 2px;
-  }
-  .w-\[4px\] {
-    width: 4px;
-  }
-  .w-\[6px\] {
-    width: 6px;
   }
   .w-\[15\%\] {
     width: 15%;
