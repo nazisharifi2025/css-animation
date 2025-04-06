@@ -397,6 +397,12 @@
   .my-auto {
     margin-block: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -415,11 +421,50 @@
   .mr-16 {
     margin-right: calc(var(--spacing) * 16);
   }
+  .mr-44 {
+    margin-right: calc(var(--spacing) * 44);
+  }
+  .mr-64 {
+    margin-right: calc(var(--spacing) * 64);
+  }
   .mr-\[70px\] {
     margin-right: 70px;
   }
   .mr-\[160px\] {
     margin-right: 160px;
+  }
+  .mr-\[310px\] {
+    margin-right: 310px;
+  }
+  .mr-\[350px\] {
+    margin-right: 350px;
+  }
+  .mr-\[380px\] {
+    margin-right: 380px;
+  }
+  .mr-\[400px\] {
+    margin-right: 400px;
+  }
+  .mr-\[420px\] {
+    margin-right: 420px;
+  }
+  .mr-\[430px\] {
+    margin-right: 430px;
+  }
+  .mr-\[440px\] {
+    margin-right: 440px;
+  }
+  .mr-\[450px\] {
+    margin-right: 450px;
+  }
+  .mr-\[460px\] {
+    margin-right: 460px;
+  }
+  .mr-\[470px\] {
+    margin-right: 470px;
+  }
+  .mr-\[480px\] {
+    margin-right: 480px;
   }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
@@ -445,8 +490,29 @@
   .ml-16 {
     margin-left: calc(var(--spacing) * 16);
   }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-23 {
+    margin-left: calc(var(--spacing) * 23);
+  }
+  .ml-28 {
+    margin-left: calc(var(--spacing) * 28);
+  }
+  .ml-32 {
+    margin-left: calc(var(--spacing) * 32);
+  }
+  .ml-\[-0\%\] {
+    margin-left: -0%;
+  }
   .ml-\[-10\%\] {
     margin-left: -10%;
+  }
+  .ml-\[-15\%\] {
+    margin-left: -15%;
+  }
+  .ml-\[15\%\] {
+    margin-left: 15%;
   }
   .ml-\[60px\] {
     margin-left: 60px;
@@ -574,8 +640,17 @@
   .h-\[40px\] {
     height: 40px;
   }
+  .h-\[60px\] {
+    height: 60px;
+  }
   .h-\[80vh\] {
     height: 80vh;
+  }
+  .h-\[90px\] {
+    height: 90px;
+  }
+  .h-\[110px\] {
+    height: 110px;
   }
   .h-\[110vh\] {
     height: 110vh;
@@ -613,6 +688,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -637,6 +715,9 @@
   .w-\[50\%\] {
     width: 50%;
   }
+  .w-\[60px\] {
+    width: 60px;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -652,6 +733,9 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[90px\] {
+    width: 90px;
+  }
   .w-\[95\%\] {
     width: 95%;
   }
@@ -660,6 +744,9 @@
   }
   .w-\[100\%\] {
     width: 100%;
+  }
+  .w-\[110px\] {
+    width: 110px;
   }
   .w-\[120px\] {
     width: 120px;
@@ -1077,6 +1164,9 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
@@ -1090,6 +1180,13 @@
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
+    }
+  }
+  .space-x-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .space-x-2 {
@@ -1125,6 +1222,13 @@
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .space-x-12 {
@@ -1696,6 +1800,9 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -1786,6 +1893,9 @@
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .leading-16 {
     --tw-leading: calc(var(--spacing) * 16);
