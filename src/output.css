@@ -22,6 +22,7 @@
     --color-purple-800: oklch(0.438 0.218 303.724);
     --color-fuchsia-500: oklch(0.667 0.295 322.15);
     --color-pink-400: oklch(0.718 0.202 349.761);
+    --color-rose-800: oklch(0.455 0.188 13.697);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-300: oklch(0.872 0.01 258.338);
@@ -1936,6 +1937,9 @@
   }
   .text-red-700 {
     color: var(--color-red-700);
+  }
+  .text-rose-800 {
+    color: var(--color-rose-800);
   }
   .text-white {
     color: var(--color-white);
