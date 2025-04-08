@@ -4,4 +4,4 @@ const newElement = document.createElement("h1");
 newElement.appendChild(newText);
 h1.parentNode.appendChild(newElement);
 const p = document.getElementsByTagName("p").item(0);
-// const newText2 = document.createTextNode("");
+const newText2 = document.createTextNode("");
