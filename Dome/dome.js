@@ -18,5 +18,6 @@ function generateTable(){
 }
 function genenerateLink(){
     const newLink = document.createTextNode("BBC");
-const
+const newHref = document.createElement("a");
+newHref.setAttribute("href")
 }
