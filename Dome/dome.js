@@ -11,5 +11,5 @@ function generateTable(){
         }
         nTr.appendChild(nTable);
     }
-    
+    body.appendChild(nTable);
 }
