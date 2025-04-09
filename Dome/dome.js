@@ -11,6 +11,8 @@ function generateTable(){
         }
         nTable.appendChild(nTr);
         nTable.setAttribute("border","2");
+        nTable.setAttribute("width","100%");
+        nTable.setAttribute("height","200px")
     }
     body.appendChild(nTable);
 }
