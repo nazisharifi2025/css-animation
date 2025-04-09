@@ -16,3 +16,7 @@ function generateTable(){
     }
     body.appendChild(nTable);
 }
+function genenerateLink(){
+    const newLink = document.createTextNode("BBC");
+const
+}
