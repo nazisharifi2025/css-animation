@@ -19,5 +19,7 @@ function generateTable(){
 function genenerateLink(){
     const newLink = document.createTextNode("BBC");
 const newHref = document.createElement("a");
-newHref.setAttribute("href")
+newHref.setAttribute("href","https://ww.bbc.com");
+newHref.appendChild(newLink);
+body.appendChild(newHref);
 }
