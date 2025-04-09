@@ -6,7 +6,10 @@ function generateTable(){
         for(let j = 0; j<5; j++){
             const nText = document.createTextNode("Naz");
             const nTd = document.createElement("td");
-            nTd.appendChild(nText)
+            nTd.appendChild(nText);
+            nTr.appendChild(nTd);
         }
+        nTr.appendChild(nTable);
     }
+    
 }
