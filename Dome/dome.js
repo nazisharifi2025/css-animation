@@ -10,6 +10,7 @@ function generateTable(){
             nTr.appendChild(nTd);
         }
         nTr.appendChild(nTable);
+        nTr.setAttribute("border","2");
     }
     body.appendChild(nTable);
 }
