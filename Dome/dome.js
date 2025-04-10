@@ -22,4 +22,5 @@ const newHref = document.createElement("a");
 newHref.setAttribute("href","https://www.bbc.com");
 newHref.appendChild(newLink);
 body.appendChild(newHref);
+newHref.setAttribute("class","a");
 }
