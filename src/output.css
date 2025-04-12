@@ -8,6 +8,7 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-700: oklch(0.505 0.213 27.518);
+    --color-amber-100: oklch(0.962 0.059 95.617);
     --color-yellow-300: oklch(0.905 0.182 98.111);
     --color-lime-300: oklch(0.897 0.196 126.665);
     --color-green-800: oklch(0.448 0.119 151.328);
@@ -21,6 +22,7 @@
     --color-purple-500: oklch(0.627 0.265 303.9);
     --color-purple-800: oklch(0.438 0.218 303.724);
     --color-fuchsia-500: oklch(0.667 0.295 322.15);
+    --color-fuchsia-900: oklch(0.401 0.17 325.612);
     --color-pink-400: oklch(0.718 0.202 349.761);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-200: oklch(0.928 0.006 264.531);
@@ -267,6 +269,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -285,14 +290,29 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
   .left-20 {
     left: calc(var(--spacing) * 20);
   }
+  .left-30 {
+    left: calc(var(--spacing) * 30);
+  }
+  .left-\[-50\%\] {
+    left: -50%;
+  }
   .left-\[50\%\] {
     left: 50%;
+  }
+  .left-\[51\%\] {
+    left: 51%;
+  }
+  .left-\[55\%\] {
+    left: 55%;
   }
   .isolate {
     isolation: isolate;
@@ -591,6 +611,9 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -615,17 +638,209 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-28\.5 {
+    height: calc(var(--spacing) * 28.5);
+  }
+  .h-29 {
+    height: calc(var(--spacing) * 29);
+  }
+  .h-29\.5 {
+    height: calc(var(--spacing) * 29.5);
+  }
+  .h-30 {
+    height: calc(var(--spacing) * 30);
+  }
+  .h-30\.5 {
+    height: calc(var(--spacing) * 30.5);
+  }
+  .h-31 {
+    height: calc(var(--spacing) * 31);
+  }
+  .h-31\.5 {
+    height: calc(var(--spacing) * 31.5);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-32\.5 {
+    height: calc(var(--spacing) * 32.5);
+  }
+  .h-33 {
+    height: calc(var(--spacing) * 33);
+  }
+  .h-33\.5 {
+    height: calc(var(--spacing) * 33.5);
+  }
+  .h-34 {
+    height: calc(var(--spacing) * 34);
+  }
+  .h-34\.5 {
+    height: calc(var(--spacing) * 34.5);
+  }
+  .h-35 {
+    height: calc(var(--spacing) * 35);
+  }
+  .h-35\.5 {
+    height: calc(var(--spacing) * 35.5);
+  }
+  .h-36 {
+    height: calc(var(--spacing) * 36);
+  }
+  .h-36\.5 {
+    height: calc(var(--spacing) * 36.5);
+  }
+  .h-37 {
+    height: calc(var(--spacing) * 37);
+  }
+  .h-37\.5 {
+    height: calc(var(--spacing) * 37.5);
+  }
+  .h-38 {
+    height: calc(var(--spacing) * 38);
+  }
+  .h-38\.5 {
+    height: calc(var(--spacing) * 38.5);
+  }
+  .h-39 {
+    height: calc(var(--spacing) * 39);
+  }
+  .h-39\.5 {
+    height: calc(var(--spacing) * 39.5);
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-40\.5 {
+    height: calc(var(--spacing) * 40.5);
+  }
+  .h-41 {
+    height: calc(var(--spacing) * 41);
+  }
+  .h-41\.5 {
+    height: calc(var(--spacing) * 41.5);
+  }
+  .h-42 {
+    height: calc(var(--spacing) * 42);
+  }
+  .h-42\.5 {
+    height: calc(var(--spacing) * 42.5);
+  }
+  .h-43 {
+    height: calc(var(--spacing) * 43);
+  }
+  .h-43\.5 {
+    height: calc(var(--spacing) * 43.5);
+  }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
+  .h-44\.5 {
+    height: calc(var(--spacing) * 44.5);
+  }
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+  .h-45\.5 {
+    height: calc(var(--spacing) * 45.5);
+  }
+  .h-46 {
+    height: calc(var(--spacing) * 46);
+  }
+  .h-46\.5 {
+    height: calc(var(--spacing) * 46.5);
+  }
+  .h-47 {
+    height: calc(var(--spacing) * 47);
+  }
+  .h-47\.5 {
+    height: calc(var(--spacing) * 47.5);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
+  .h-48\.5 {
+    height: calc(var(--spacing) * 48.5);
+  }
+  .h-49 {
+    height: calc(var(--spacing) * 49);
+  }
+  .h-49\.5 {
+    height: calc(var(--spacing) * 49.5);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .h-50\.5 {
+    height: calc(var(--spacing) * 50.5);
+  }
+  .h-51 {
+    height: calc(var(--spacing) * 51);
+  }
+  .h-51\.5 {
+    height: calc(var(--spacing) * 51.5);
+  }
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .h-52\.5 {
+    height: calc(var(--spacing) * 52.5);
+  }
+  .h-53 {
+    height: calc(var(--spacing) * 53);
+  }
+  .h-53\.5 {
+    height: calc(var(--spacing) * 53.5);
+  }
+  .h-54 {
+    height: calc(var(--spacing) * 54);
+  }
+  .h-54\.5 {
+    height: calc(var(--spacing) * 54.5);
+  }
+  .h-55 {
+    height: calc(var(--spacing) * 55);
+  }
+  .h-55\.5 {
+    height: calc(var(--spacing) * 55.5);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
+  .h-56\.5 {
+    height: calc(var(--spacing) * 56.5);
+  }
+  .h-57 {
+    height: calc(var(--spacing) * 57);
+  }
+  .h-58 {
+    height: calc(var(--spacing) * 58);
+  }
+  .h-59 {
+    height: calc(var(--spacing) * 59);
+  }
   .h-60 {
     height: calc(var(--spacing) * 60);
+  }
+  .h-60\.5 {
+    height: calc(var(--spacing) * 60.5);
+  }
+  .h-61 {
+    height: calc(var(--spacing) * 61);
+  }
+  .h-62 {
+    height: calc(var(--spacing) * 62);
   }
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
   .h-74 {
     height: calc(var(--spacing) * 74);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-160 {
+    height: calc(var(--spacing) * 160);
   }
   .h-\[20px\] {
     height: 20px;
@@ -687,8 +902,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
   .w-0\.5 {
     width: calc(var(--spacing) * 0.5);
+  }
+  .w-0\/5 {
+    width: calc(0/5 * 100%);
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -702,6 +923,9 @@
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -713,6 +937,12 @@
   }
   .w-74 {
     width: calc(var(--spacing) * 74);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-160 {
+    width: calc(var(--spacing) * 160);
   }
   .w-\[15\%\] {
     width: 15%;
@@ -874,8 +1104,20 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-3 {
+    --tw-translate-x: calc(var(--spacing) * 3);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -894,8 +1136,519 @@
   .scale-none {
     scale: none;
   }
+  .rotate-1 {
+    rotate: 1deg;
+  }
+  .rotate-2 {
+    rotate: 2deg;
+  }
+  .rotate-3 {
+    rotate: 3deg;
+  }
+  .rotate-4 {
+    rotate: 4deg;
+  }
+  .rotate-5 {
+    rotate: 5deg;
+  }
+  .rotate-6 {
+    rotate: 6deg;
+  }
+  .rotate-7 {
+    rotate: 7deg;
+  }
+  .rotate-8 {
+    rotate: 8deg;
+  }
+  .rotate-9 {
+    rotate: 9deg;
+  }
+  .rotate-10 {
+    rotate: 10deg;
+  }
+  .rotate-11 {
+    rotate: 11deg;
+  }
+  .rotate-12 {
+    rotate: 12deg;
+  }
+  .rotate-13 {
+    rotate: 13deg;
+  }
+  .rotate-14 {
+    rotate: 14deg;
+  }
+  .rotate-15 {
+    rotate: 15deg;
+  }
+  .rotate-16 {
+    rotate: 16deg;
+  }
+  .rotate-17 {
+    rotate: 17deg;
+  }
+  .rotate-18 {
+    rotate: 18deg;
+  }
+  .rotate-19 {
+    rotate: 19deg;
+  }
+  .rotate-20 {
+    rotate: 20deg;
+  }
+  .rotate-21 {
+    rotate: 21deg;
+  }
+  .rotate-22 {
+    rotate: 22deg;
+  }
+  .rotate-23 {
+    rotate: 23deg;
+  }
+  .rotate-24 {
+    rotate: 24deg;
+  }
+  .rotate-25 {
+    rotate: 25deg;
+  }
+  .rotate-26 {
+    rotate: 26deg;
+  }
+  .rotate-27 {
+    rotate: 27deg;
+  }
+  .rotate-28 {
+    rotate: 28deg;
+  }
+  .rotate-29 {
+    rotate: 29deg;
+  }
+  .rotate-30 {
+    rotate: 30deg;
+  }
+  .rotate-31 {
+    rotate: 31deg;
+  }
+  .rotate-32 {
+    rotate: 32deg;
+  }
+  .rotate-33 {
+    rotate: 33deg;
+  }
+  .rotate-34 {
+    rotate: 34deg;
+  }
+  .rotate-35 {
+    rotate: 35deg;
+  }
+  .rotate-36 {
+    rotate: 36deg;
+  }
+  .rotate-37 {
+    rotate: 37deg;
+  }
+  .rotate-38 {
+    rotate: 38deg;
+  }
+  .rotate-39 {
+    rotate: 39deg;
+  }
+  .rotate-40 {
+    rotate: 40deg;
+  }
+  .rotate-41 {
+    rotate: 41deg;
+  }
+  .rotate-42 {
+    rotate: 42deg;
+  }
+  .rotate-43 {
+    rotate: 43deg;
+  }
+  .rotate-44 {
+    rotate: 44deg;
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .rotate-46 {
+    rotate: 46deg;
+  }
+  .rotate-47 {
+    rotate: 47deg;
+  }
+  .rotate-48 {
+    rotate: 48deg;
+  }
+  .rotate-49 {
+    rotate: 49deg;
+  }
+  .rotate-50 {
+    rotate: 50deg;
+  }
+  .rotate-51 {
+    rotate: 51deg;
+  }
+  .rotate-52 {
+    rotate: 52deg;
+  }
+  .rotate-53 {
+    rotate: 53deg;
+  }
+  .rotate-54 {
+    rotate: 54deg;
+  }
+  .rotate-55 {
+    rotate: 55deg;
+  }
+  .rotate-56 {
+    rotate: 56deg;
+  }
+  .rotate-57 {
+    rotate: 57deg;
+  }
+  .rotate-58 {
+    rotate: 58deg;
+  }
+  .rotate-59 {
+    rotate: 59deg;
+  }
+  .rotate-60 {
+    rotate: 60deg;
+  }
+  .rotate-61 {
+    rotate: 61deg;
+  }
+  .rotate-62 {
+    rotate: 62deg;
+  }
+  .rotate-63 {
+    rotate: 63deg;
+  }
+  .rotate-70 {
+    rotate: 70deg;
+  }
+  .rotate-160 {
+    rotate: 160deg;
+  }
+  .rotate-190 {
+    rotate: 190deg;
+  }
+  .rotate-250 {
+    rotate: 250deg;
+  }
+  .rotate-400 {
+    rotate: 400deg;
+  }
+  .rotate-\[-15\] {
+    rotate: -15;
+  }
   .rotate-none {
     rotate: none;
+  }
+  .rotate-x-10 {
+    --tw-rotate-x: rotateX(10deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-x-15 {
+    --tw-rotate-x: rotateX(15deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-x-55 {
+    --tw-rotate-x: rotateX(55deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-2 {
+    --tw-rotate-y: rotateY(2deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-15 {
+    --tw-rotate-y: rotateY(15deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-y-55 {
+    --tw-rotate-y: rotateY(55deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-1 {
+    --tw-rotate-z: rotateZ(calc(1deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-2 {
+    --tw-rotate-z: rotateZ(calc(2deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-3 {
+    --tw-rotate-z: rotateZ(calc(3deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-4 {
+    --tw-rotate-z: rotateZ(calc(4deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-5 {
+    --tw-rotate-z: rotateZ(calc(5deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-6 {
+    --tw-rotate-z: rotateZ(calc(6deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-7 {
+    --tw-rotate-z: rotateZ(calc(7deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-8 {
+    --tw-rotate-z: rotateZ(calc(8deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-9 {
+    --tw-rotate-z: rotateZ(calc(9deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-10 {
+    --tw-rotate-z: rotateZ(calc(10deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-11 {
+    --tw-rotate-z: rotateZ(calc(11deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-12 {
+    --tw-rotate-z: rotateZ(calc(12deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-13 {
+    --tw-rotate-z: rotateZ(calc(13deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-14 {
+    --tw-rotate-z: rotateZ(calc(14deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-15 {
+    --tw-rotate-z: rotateZ(calc(15deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-16 {
+    --tw-rotate-z: rotateZ(calc(16deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-17 {
+    --tw-rotate-z: rotateZ(calc(17deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-18 {
+    --tw-rotate-z: rotateZ(calc(18deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-19 {
+    --tw-rotate-z: rotateZ(calc(19deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-20 {
+    --tw-rotate-z: rotateZ(calc(20deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-21 {
+    --tw-rotate-z: rotateZ(calc(21deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-22 {
+    --tw-rotate-z: rotateZ(calc(22deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-23 {
+    --tw-rotate-z: rotateZ(calc(23deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-24 {
+    --tw-rotate-z: rotateZ(calc(24deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-25 {
+    --tw-rotate-z: rotateZ(calc(25deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-26 {
+    --tw-rotate-z: rotateZ(calc(26deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-27 {
+    --tw-rotate-z: rotateZ(calc(27deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-28 {
+    --tw-rotate-z: rotateZ(calc(28deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-29 {
+    --tw-rotate-z: rotateZ(calc(29deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-30 {
+    --tw-rotate-z: rotateZ(calc(30deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-31 {
+    --tw-rotate-z: rotateZ(calc(31deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-32 {
+    --tw-rotate-z: rotateZ(calc(32deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-33 {
+    --tw-rotate-z: rotateZ(calc(33deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-34 {
+    --tw-rotate-z: rotateZ(calc(34deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-35 {
+    --tw-rotate-z: rotateZ(calc(35deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-36 {
+    --tw-rotate-z: rotateZ(calc(36deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-37 {
+    --tw-rotate-z: rotateZ(calc(37deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-38 {
+    --tw-rotate-z: rotateZ(calc(38deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-39 {
+    --tw-rotate-z: rotateZ(calc(39deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-40 {
+    --tw-rotate-z: rotateZ(calc(40deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-41 {
+    --tw-rotate-z: rotateZ(calc(41deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-42 {
+    --tw-rotate-z: rotateZ(calc(42deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-43 {
+    --tw-rotate-z: rotateZ(calc(43deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-44 {
+    --tw-rotate-z: rotateZ(calc(44deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-45 {
+    --tw-rotate-z: rotateZ(calc(45deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-46 {
+    --tw-rotate-z: rotateZ(calc(46deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-47 {
+    --tw-rotate-z: rotateZ(calc(47deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-48 {
+    --tw-rotate-z: rotateZ(calc(48deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-49 {
+    --tw-rotate-z: rotateZ(calc(49deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-50 {
+    --tw-rotate-z: rotateZ(calc(50deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-51 {
+    --tw-rotate-z: rotateZ(calc(51deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-52 {
+    --tw-rotate-z: rotateZ(calc(52deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-53 {
+    --tw-rotate-z: rotateZ(calc(53deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-54 {
+    --tw-rotate-z: rotateZ(calc(54deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-55 {
+    --tw-rotate-z: rotateZ(calc(55deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-56 {
+    --tw-rotate-z: rotateZ(calc(56deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-57 {
+    --tw-rotate-z: rotateZ(calc(57deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-58 {
+    --tw-rotate-z: rotateZ(calc(58deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-59 {
+    --tw-rotate-z: rotateZ(calc(59deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-60 {
+    --tw-rotate-z: rotateZ(calc(60deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-61 {
+    --tw-rotate-z: rotateZ(calc(61deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-62 {
+    --tw-rotate-z: rotateZ(calc(62deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-63 {
+    --tw-rotate-z: rotateZ(calc(63deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .-rotate-z-64 {
+    --tw-rotate-z: rotateZ(calc(64deg * -1));
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-31 {
+    --tw-rotate-z: rotateZ(31deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-32 {
+    --tw-rotate-z: rotateZ(32deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-33 {
+    --tw-rotate-z: rotateZ(33deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-34 {
+    --tw-rotate-z: rotateZ(34deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-35 {
+    --tw-rotate-z: rotateZ(35deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .rotate-z-36 {
+    --tw-rotate-z: rotateZ(36deg);
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -1510,6 +2263,9 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-amber-100 {
+    border-color: var(--color-amber-100);
+  }
   .border-bgcon {
     border-color: var(--color-bgcon);
   }
@@ -1518,6 +2274,9 @@
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .border-b-fuchsia-900 {
+    border-bottom-color: var(--color-fuchsia-900);
   }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
@@ -1572,6 +2331,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-red-700 {
+    background-color: var(--color-red-700);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1676,6 +2438,12 @@
   .to-yellow-300 {
     --tw-gradient-to: var(--color-yellow-300);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-50\% {
+    --tw-gradient-to-position: 50%;
+  }
+  .to-\[-50\%\] {
+    --tw-gradient-to-position: -50%;
   }
   .box-decoration-clone {
     -webkit-box-decoration-break: clone;
