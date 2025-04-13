@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تمرین لایک با dataset</title>
+    <style>
+      button {
+        font-size: 24px;
+        margin: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>روی قلب کلیک کن ❤️</h2>
+
+    <div>
+      <button class="like-btn" data-liked="false">🤍</button>
+      <span class="like-count">0</span>
+    </div>
+
+    <div>
+      <button class="like-btn" data-liked="false">🤍</button>
+      <span class="like-count">0</span>
+    </div>
+
+    <script>
+      const likeButtons = document.querySelectorAll(".like-btn");
+
+      for (let i = 0; i < likeButtons.length; i++) {
+        const btn = likeButtons[i];
+        const wrapper = btn.parentElement;
+        const count = wrapper.children[1]; // span لایک
+
+        btn.addEventListener("click", () => {
+          let liked = btn.dataset.liked === "true"; // بررسی وضعیت لایک
+
+          if (liked) {
+            btn.textContent = "🤍";
+            btn.dataset.liked = "false";
+            count.textContent = "0";
+          } else {
+            btn.textContent = "❤️";
+            btn.dataset.liked = "true";
+            count.textContent = "1";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
