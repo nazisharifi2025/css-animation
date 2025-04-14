@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>داشبورد مدیر مکتب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- نوار بالا -->
+    <header class="bg-blue-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">مدیریت مکتب</h1>
+        <span>خوش آمدید، مدیر!</span>
+      </div>
+    </header>
+
+    <!-- محتوای داشبورد -->
+    <main class="p-6 container mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">داشبورد اصلی</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- تعداد شاگردان -->
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-lg font-bold mb-2">تعداد شاگردان</h3>
+          <p class="text-3xl text-blue-700 font-bold">۳۲۰</p>
+        </div>
+
+        <!-- تعداد معلمان -->
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-lg font-bold mb-2">تعداد معلمان</h3>
+          <p class="text-3xl text-green-600 font-bold">۲۵</p>
+        </div>
+
+        <!-- تعداد صنف‌ها -->
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-lg font-bold mb-2">تعداد صنف‌ها</h3>
+          <p class="text-3xl text-purple-600 font-bold">۱۵</p>
+        </div>
+
+        <!-- پرداخت شهریه -->
+        <div class="bg-white rounded shadow p-4">
+          <h3 class="text-lg font-bold mb-2">شهریه دریافت‌شده</h3>
+          <p class="text-2xl text-red-600 font-bold">۱٬۲۵۰٬۰۰۰ افغانی</p>
+        </div>
+      </div>
+
+      <!-- اطلاعیه‌ها -->
+      <div class="mt-10 bg-white p-4 rounded shadow">
+        <h3 class="text-xl font-bold mb-4">اطلاعیه‌های جدید</h3>
+        <ul class="list-disc pr-5 space-y-2 text-sm text-gray-700">
+          <li>صنف دوازدهم امتحان آزمایشی دارد در تاریخ ۲۰ حمل</li>
+          <li>پرداخت شهریه ماه حمل تا ۲۵م این ماه انجام شود</li>
+          <li>جلسه اولیا و مربیان هفته آینده برگزار می‌شود</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- پاورقی -->
+    <footer class="bg-blue-800 text-white text-center p-3 mt-10">
+      &copy; ۱۴۰۴ مکتب نمونه. تمام حقوق محفوظ است.
+    </footer>
+  </body>
+</html>
