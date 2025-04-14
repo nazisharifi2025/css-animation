@@ -66,8 +66,8 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --color-bgcon: rgba(255,255,255,0.3);
-    --color-bgfi: rgba(255,255,255,0.1);
+    --color-bgcon: rgba(255, 255, 255, 0.3);
+    --color-bgfi: rgba(255, 255, 255, 0.1);
   }
 }
 @layer base {
@@ -272,9 +272,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -292,9 +289,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -511,9 +505,6 @@
   }
   .ml-20 {
     margin-left: calc(var(--spacing) * 20);
-  }
-  .ml-56 {
-    margin-left: calc(var(--spacing) * 56);
   }
   .ml-\[-10\%\] {
     margin-left: -10%;
@@ -746,9 +737,6 @@
   .h-74 {
     height: calc(var(--spacing) * 74);
   }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
@@ -773,9 +761,6 @@
   .h-\[80vh\] {
     height: 80vh;
   }
-  .h-\[90px\] {
-    height: 90px;
-  }
   .h-\[94\%\] {
     height: 94%;
   }
@@ -794,20 +779,11 @@
   .h-\[130vh\] {
     height: 130vh;
   }
-  .h-\[160vh\] {
-    height: 160vh;
-  }
   .h-\[180vh\] {
     height: 180vh;
   }
-  .h-\[200vh\] {
-    height: 200vh;
-  }
   .h-\[250px\] {
     height: 250px;
-  }
-  .h-\[250vh\] {
-    height: 250vh;
   }
   .h-\[283px\] {
     height: 283px;
@@ -832,9 +808,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-0 {
-    width: calc(var(--spacing) * 0);
   }
   .w-0\.5 {
     width: calc(var(--spacing) * 0.5);
@@ -904,9 +877,6 @@
   }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-\[90px\] {
-    width: 90px;
   }
   .w-\[94\%\] {
     width: 94%;
@@ -1038,16 +1008,8 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -1796,9 +1758,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
@@ -2569,12 +2528,6 @@
   .text-\[1em\] {
     font-size: 1em;
   }
-  .text-\[7px\] {
-    font-size: 7px;
-  }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
   .text-\[12px\] {
     font-size: 12px;
   }
@@ -2677,9 +2630,6 @@
   }
   .text-black {
     color: var(--color-black);
-  }
-  .text-gray-100 {
-    color: var(--color-gray-100);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -3311,6 +3261,7 @@
     }
   }
 }
+@import url(../fonts/kalam/Kalam-Regular.ttf);
 :root {
   --acme-canvas-color: oklch(0.967 0.003 264.542);
 }
