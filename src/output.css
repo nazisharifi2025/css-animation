@@ -2569,11 +2569,17 @@
   .text-\[1em\] {
     font-size: 1em;
   }
+  .text-\[7px\] {
+    font-size: 7px;
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
   .text-\[12px\] {
     font-size: 12px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -2671,6 +2677,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-gray-100 {
+    color: var(--color-gray-100);
   }
   .text-gray-400 {
     color: var(--color-gray-400);
