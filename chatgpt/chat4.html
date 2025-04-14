@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>داشبورد مدیریتی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- سایدبار -->
+    <div class="flex min-h-screen">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-md hidden md:block">
+        <div class="p-6 text-2xl font-bold text-blue-600">مدیریت مدرسه</div>
+        <nav class="mt-4 space-y-2 px-6">
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >📊 داشبورد</a
+          >
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >👩‍🎓 دانش‌آموزان</a
+          >
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >👨‍🏫 معلمان</a
+          >
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >🏫 کلاس‌ها</a
+          >
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >📈 گزارش‌ها</a
+          >
+          <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100"
+            >⚙️ تنظیمات</a
+          >
+        </nav>
+      </aside>
+
+      <!-- محتوای اصلی -->
+      <div class="flex-1 flex flex-col">
+        <!-- Topbar -->
+        <header
+          class="bg-white shadow-md px-6 py-4 flex items-center justify-between"
+        >
+          <div class="text-lg font-semibold">داشبورد</div>
+          <div class="flex items-center space-x-4 space-x-reverse">
+            <button class="relative">
+              <span
+                class="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"
+              ></span>
+              🔔
+            </button>
+            <div
+              class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center"
+            >
+              😊
+            </div>
+          </div>
+        </header>
+
+        <!-- Cards -->
+        <main class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Card 1 -->
+          <div class="bg-white p-4 rounded shadow">
+            <div class="text-sm text-gray-500">تعداد دانش‌آموزان</div>
+            <div class="text-2xl font-bold mt-2">۱۲۰ نفر</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-4 rounded shadow">
+            <div class="text-sm text-gray-500">تعداد کلاس‌ها</div>
+            <div class="text-2xl font-bold mt-2">۸ کلاس</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-4 rounded shadow">
+            <div class="text-sm text-gray-500">غیبت‌های امروز</div>
+            <div class="text-2xl font-bold mt-2">۵ مورد</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-4 rounded shadow">
+            <div class="text-sm text-gray-500">پیام‌های جدید</div>
+            <div class="text-2xl font-bold mt-2">۳ پیام</div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
