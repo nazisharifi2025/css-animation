@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="cofeteria.js" defer></script>
+    <script src="coffe2.js" defer></script>
     <link rel="stylesheet" href="../src/output.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -104,14 +104,18 @@
         <!-- img -->
       </div>
       <div
+        class="h-screen w-full relative flex justify-between items-center space-x-3 px-3.5"
+      >
+        <button id="btnR" class="h-14 w-14 bg-gray-300 rounded-full text-white">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
+        <button id="btnL" class="h-14 w-14 bg-gray-300 rounded-full text-white">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
+      </div>
+      <div
         class="absolute top-0 left-0 w-full h-full z-10 flex items-center justify-center text-white text-center"
       >
-        <!-- <div -->
-        <!-- class="h-screen w-full relative flex justify-between space-x-3 px-3.5" -->
-        <!-- > -->
-        <!-- <id="btn-r" button class="h-14 w-14 bg-gray-300 rounded-full text-white"></button> -->
-        <!-- <button id="btn-l" class="h-14 w-14 "></button> -->
-        <!-- </div> -->
         <div id="slider-content" class="w-100">
           <p class="text-2xl mb-6" id="slide-description">Wellcom</p>
           <h1 class="text-5xl font-bold mb-4" id="slide-title">Coffe House</h1>
@@ -123,5 +127,45 @@
       </div>
       <!-- عمومی -->
     </div>
+    <div class="w-full flex-col gap-4 font-kalam">
+      <div class="flex justify-center space-x-5">
+        <div class="h-1 w-24 border-b-2 border-black mt-3"></div>
+        <div>About Us</div>
+        <div class="h-1 w-24 border-b-2 border-black mt-3"></div>
+      </div>
+      <p class="m-auto text-center text-gray-500">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+      <!--  -->
+      <div class="flex w-full mt-6 mx-auto justify-center h-[60vh]">
+        <div class="w-[50%] h-52` flex flex-wrap gap-1">
+          <img src="for img/a1.jpg" class="h-40 w-80" alt="" />
+          <img src="for img/a2.jpg" alt="" class="h-40 w-80" />
+          <img src="for img/a3.jpg" alt="" class="w-50 h-40" />
+          <img src="for img/a4.jpg" alt="" class="w-50 h-40" />
+          <img src="for img/a5.jpg" alt="" class="w-59 h-40" />
+        </div>
+        <div class="w-[40%]">
+          <h1 class="text-3xl">cafeteria</h1>
+          <p class="text-gray-500">
+            Li nov lingua franca va esser plu simplic e regulari quam li
+            existent lit Europan lingues. A un Angleso it va semblar a
+            simplificat Angles, quam un skeptic Cambridge amico dit me que
+            Occidental es. existent lit Europan lingues. A un Angleso it va
+            semblar a simplificat Angles, quam un skeptic Cambridge amico dit me
+            que Occidental es. Quam un skeptic Cambridge amico dit me que
+            Occidental es. existent lit Europan lingues. A un Angleso it va
+            semblar a simplificat Angles, quam un skeptic Cambridge amico dit me
+            que Occidental es.Quam un skeptic Cambridge amico dit me que
+            Occidental es. existent lit Europan lingues. A un Angleso it va
+            semblar a simplificat Angles, quam un skeptic Cambridge amico dit me
+            que Occidental es.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full h-[100vh] bg-[url(../first/imgs/images.jpg)] bg-no-repeat bg-cover bg-fixed"
+    ></div>
   </body>
 </html>

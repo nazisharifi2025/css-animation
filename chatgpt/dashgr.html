@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>لیست دانش‌آموزان مکتب</title>
     <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            direction: rtl;
-            text-align: right;
-            margin: 20px;
-            background-color: #f4f4f9;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: center;
-            font-size: 16px;
-        }
-        th {
-            background-color: #2c3e50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #ecf0f1;
-        }
-        tr:nth-child(odd) {
-            background-color: #bdc3c7;
-        }
-        tr:hover {
-            background-color: #3498db;
-            color: white;
-        }
+      body {
+        font-family: Tahoma, sans-serif;
+        direction: rtl;
+        text-align: right;
+        margin: 20px;
+        background-color: #f4f4f9;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 16px;
+      }
+      th {
+        background-color: #2c3e50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #ecf0f1;
+      }
+      tr:nth-child(odd) {
+        background-color: #bdc3c7;
+      }
+      tr:hover {
+        background-color: #3498db;
+        color: white;
+      }
     </style>
-</head>
-<body>
-
-    <h1 style="color: #2c3e50;">لیست دانش‌آموزان مکتب</h1>
+  </head>
+  <body>
+    <h1 style="color: #2c3e50">لیست دانش‌آموزان مکتب</h1>
 
     <table>
-        <thead>
-            <tr>
-                <th>شماره دانش‌آموز</th>
-                <th>نام و نام خانوادگی</th>
-                <th>کلاس</th>
-                <th>سن</th>
-                <th>وضعیت ثبت‌نام</th>
-                <th
+      <thead>
+        <tr>
+          <th>شماره دانش‌آموز</th>
+          <th>نام و نام خانوادگی</th>
+          <th>کلاس</th>
+          <th>سن</th>
+          <th>وضعیت ثبت‌نام</th>
+          <th <!-- --></th>
+        </tr>
+
+        <div class="w-[90%] mx-auto mt-10 shadow-xl rounded-lg font-kalam">
+          <h2 class="text-2xl font-bold mb-4 text-center">
+            List of Teachers and Their Subjects
+          </h2>
+          <table class="w-full text-left border-separate border-spacing-y-2">
+            <thead class="bg-blue-500 text-white">
+              <tr>
+                <th class="pb-2">Teacher Name</th>
+                <th class="pb-2">Subject</th>
+                <th class="pb-2">Grade</th>
+                <th class="pb-2">Status</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-gray-800">
+              <tr class="hover:bg-gray-50 border-b border-gray-300">
+                <td class="py-2">Mr. Salehi</td>
+                <td class="py-2">Chemistry</td>
+                <td class="py-2">Grade 12</td>
+                <td class="py-2 text-green-600 font-semibold">Active</td>
+              </tr>
+              <tr class="hover:bg-gray-50 border-b border-gray-300">
+                <td class="py-2">Ms. Nazari</td>
+                <td class="py-2">English</td>
+                <td class="py-2">Grade 10</td>
+                <td class="py-2 text-green-600 font-semibold">Active</td>
+              </tr>
+              <tr class="hover:bg-gray-50 border-b border-gray-300">
+                <td class="py-2">Mr. Ahmadi</td>
+                <td class="py-2">Math</td>
+                <td class="py-2">Grade 11</td>
+                <td class="py-2 text-red-600 font-semibold">On Leave</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </thead>
+    </table>
+  </body>
+</html>
