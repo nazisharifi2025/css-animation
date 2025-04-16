@@ -3,97 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>داشبورد آقای شریفی</title>
+    <title>داشبورد مکتب شریفی</title>
     <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 font-sans">
-    <!-- داشبورد -->
-    <div
-      class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg font-sans"
+    <!-- ناوبری بالا -->
+    <header
+      class="bg-blue-700 text-white p-4 flex justify-between items-center"
     >
-      <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-        👨‍💼 داشبورد آقای شریفی
-      </h2>
+      <h1 class="text-2xl font-bold">🎓 مکتب شریفی</h1>
+      <span>مدیریت مکتب</span>
+    </header>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- مدیریت نمرات -->
-        <div
-          class="bg-gray-100 p-4 rounded shadow hover:bg-gray-200 transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">📋 مدیریت نمرات</h3>
-          <p class="text-gray-600">مشاهده و ثبت نمرات شاگردان</p>
-          <button
-            onclick="openGrades()"
-            class="mt-3 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
-          >
-            ورود
-          </button>
-        </div>
+    <!-- منو سمت راست -->
+    <div class="flex">
+      <aside class="w-64 bg-white shadow h-screen p-4">
+        <ul class="space-y-4 text-gray-800">
+          <li>
+            <button
+              onclick="showSection('dashboard')"
+              class="hover:text-blue-700"
+            >
+              🏫 آمار کلی
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="showSection('teachers')"
+              class="hover:text-blue-700"
+            >
+              👨‍🏫 معلم‌ها
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="showSection('students')"
+              class="hover:text-blue-700"
+            >
+              👨‍🎓 شاگردان
+            </button>
+          </li>
+          <li>
+            <button onclick="showSection('grades')" class="hover:text-blue-700">
+              📋 نمرات
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="showSection('schedule')"
+              class="hover:text-blue-700"
+            >
+              🗓 برنامه درسی
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="showSection('messages')"
+              class="hover:text-blue-700"
+            >
+              📢 پیام‌ها
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="showSection('settings')"
+              class="hover:text-blue-700"
+            >
+              ⚙️ تنظیمات
+            </button>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- محتوای اصلی -->
+      <main class="flex-1 p-6">
+        <!-- آمار کلی -->
+        <section id="dashboard" class="section">
+          <h2 class="text-xl font-bold mb-4">🏫 آمار کلی</h2>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded text-center">
+              <p class="text-3xl font-bold" id="students-count">120</p>
+              <p>شاگرد</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded text-center">
+              <p class="text-3xl font-bold" id="teachers-count">10</p>
+              <p>معلم</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded text-center">
+              <p class="text-3xl font-bold">6</p>
+              <p>صنف</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- معلم‌ها -->
+        <section id="teachers" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">👨‍🏫 معلم‌ها</h2>
+          <p>لیست معلم‌ها به زودی...</p>
+        </section>
+
+        <!-- شاگردان -->
+        <section id="students" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">👨‍🎓 شاگردان</h2>
+          <p>لیست شاگردان به زودی...</p>
+        </section>
+
+        <!-- نمرات -->
+        <section id="grades" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">📋 نمرات</h2>
+          <p>ورود و نمایش نمرات به زودی...</p>
+        </section>
+
+        <!-- برنامه درسی -->
+        <section id="schedule" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">🗓 برنامه درسی</h2>
+          <p>برنامه درسی صنف‌ها...</p>
+        </section>
 
         <!-- پیام‌ها -->
-        <div
-          class="bg-gray-100 p-4 rounded shadow hover:bg-gray-200 transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">✉️ پیام‌ها</h3>
-          <p class="text-gray-600">ارسال پیام به معلم‌ها یا شاگردان</p>
-          <button
-            class="mt-3 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
-          >
-            ورود
-          </button>
-        </div>
+        <section id="messages" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">📢 پیام‌ها</h2>
+          <p>ارسال پیام به معلم‌ها و شاگردها...</p>
+        </section>
 
-        <!-- گزارش‌ها -->
-        <div
-          class="bg-gray-100 p-4 rounded shadow hover:bg-gray-200 transition"
-        >
-          <h3 class="text-xl font-semibold mb-2">📈 گزارش‌گیری</h3>
-          <p class="text-gray-600">دانلود گزارش نمرات و حضور</p>
-          <button
-            class="mt-3 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700"
-          >
-            ورود
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- پنجره ثبت نمره -->
-    <div
-      id="gradeModal"
-      class="fixed inset-0 bg-black/40 flex items-center justify-center hidden"
-    >
-      <div class="bg-white rounded-lg p-6 w-96 shadow-lg">
-        <h3 class="text-xl font-bold mb-4">ثبت نمره شاگرد</h3>
-        <input
-          id="studentName"
-          type="text"
-          placeholder="نام شاگرد"
-          class="w-full border p-2 mb-3 rounded"
-        />
-        <input
-          id="studentGrade"
-          type="number"
-          placeholder="نمره"
-          class="w-full border p-2 mb-3 rounded"
-        />
-        <div class="flex justify-between">
-          <button
-            onclick="saveGrade()"
-            class="bg-green-600 text-white px-4 py-1 rounded"
-          >
-            ثبت
-          </button>
-          <button
-            onclick="closeGrades()"
-            class="bg-gray-400 text-white px-4 py-1 rounded"
-          >
-            بستن
-          </button>
-        </div>
-        <div id="gradeList" class="mt-4 text-sm text-gray-700"></div>
-      </div>
+        <!-- تنظیمات -->
+        <section id="settings" class="section hidden">
+          <h2 class="text-xl font-bold mb-4">⚙️ تنظیمات</h2>
+          <p>مدیریت تنظیمات مکتب...</p>
+        </section>
+      </main>
     </div>
   </body>
 </html>
