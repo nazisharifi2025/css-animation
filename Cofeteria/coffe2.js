@@ -70,6 +70,44 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Buttons not found");
   }
 });
+const priceBoxes = document.querySelectorAll(".price-box");
+let currentIndex = 0;
+
+setInterval(() => {
+  // همه کارت‌ها رو مخفی می‌کنیم
+  priceBoxes.forEach((box) => {
+    box.classList.add("hidden", "opacity-0", "translate-x-24");
+    box.classList.remove("flex", "opacity-100", "translate-x-0");
+  });
+
+  // دوتا کارت بعدی رو نمایش می‌دیم
+  for (
+    let i = currentIndex;
+    i < currentIndex + 2 && i < priceBoxes.length;
+    i++
+  ) {
+    const box = priceBoxes[i];
+
+    // نشون دادن کارت
+    box.classList.remove("hidden");
+    box.classList.add("flex");
+
+    // یه مقدار صبر می‌کنیم تا انیمیشن اعمال شه
+    setTimeout(() => {
+      box.classList.remove("opacity-0", "translate-x-24");
+      box.classList.add("opacity-100", "translate-x-0");
+    }, 50);
+  }
+
+  // بریم سراغ دوتای بعدی
+  currentIndex += 2;
+
+  // اگه رسیدیم به آخر، برگردیم اول
+  if (currentIndex >= priceBoxes.length) {
+    currentIndex = 0;
+  }
+}, 3000); // هر ۳ ثانیه اجرا میشه
+
 setInterval(() => {
   current = (current + 1) % images.length;
   updateSlide();
