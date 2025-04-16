@@ -15,6 +15,7 @@
     --color-amber-950: oklch(0.279 0.077 45.635);
     --color-yellow-200: oklch(0.945 0.129 101.54);
     --color-yellow-300: oklch(0.905 0.182 98.111);
+    --color-yellow-400: oklch(0.852 0.199 91.936);
     --color-lime-300: oklch(0.897 0.196 126.665);
     --color-green-200: oklch(0.925 0.084 155.995);
     --color-green-400: oklch(0.792 0.209 151.711);
@@ -1068,6 +1069,9 @@
   }
   .w-\[50\%\] {
     width: 50%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[60px\] {
     width: 60px;
@@ -2586,6 +2590,9 @@
   .bg-yellow-200 {
     background-color: var(--color-yellow-200);
   }
+  .bg-yellow-400 {
+    background-color: var(--color-yellow-400);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -3219,6 +3226,9 @@
   .text-gray-800 {
     color: var(--color-gray-800);
   }
+  .text-gray-900 {
+    color: var(--color-gray-900);
+  }
   .text-gray-950 {
     color: var(--color-gray-950);
   }
@@ -3804,6 +3814,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-50);
+      }
+    }
+  }
+  .hover\:bg-gray-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-100);
       }
     }
   }

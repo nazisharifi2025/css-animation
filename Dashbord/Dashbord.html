@@ -7,140 +7,85 @@
     <link rel="stylesheet" href="../src/output.css" />
   </head>
   <body>
-    <div class="p-8 bg-gray-100 font-kalam min-h-screen">
-      <!-- Header -->
-      <div
-        class="flex justify-between items-center bg-white shadow-md p-4 rounded-md mb-6"
-      >
-        <div class="flex items-center gap-4">
-          <img
-            src="../img/teacher.png"
-            alt="teacher"
-            class="w-16 h-16 rounded-full"
-          />
-          <div>
-            <h2 class="text-xl font-bold">Mr. Salehi</h2>
-            <p class="text-gray-500">Chemistry Teacher</p>
-          </div>
-        </div>
-        <button class="bg-red-500 text-white px-4 py-2 rounded-md">
-          Log out
-        </button>
-      </div>
+    <div class="p-6 font-kalam bg-gray-100 min-h-screen">
+      <h2 class="text-2xl font-bold mb-4 text-center">لیست تمام معلم‌ها</h2>
 
-      <!-- Main Cards -->
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
-        <div class="bg-blue-200 p-4 rounded-md shadow">
-          <h3 class="text-lg font-bold">Classes</h3>
-          <p>Grade 10, Grade 12</p>
-        </div>
-        <div class="bg-green-200 p-4 rounded-md shadow">
-          <h3 class="text-lg font-bold">Students</h3>
-          <p>80 Students</p>
-        </div>
-        <div class="bg-yellow-200 p-4 rounded-md shadow">
-          <h3 class="text-lg font-bold">This Week Classes</h3>
-          <p>14 Classes</p>
-        </div>
-      </div>
-
-      <!-- Weekly Schedule -->
-      <div class="bg-white shadow-md p-6 rounded-md mb-10">
-        <h3 class="text-xl font-bold mb-4">Weekly Schedule</h3>
-        <table class="w-full text-left border-collapse">
-          <thead class="bg-gray-200">
-            <tr>
-              <th class="p-2">Day</th>
-              <th class="p-2">Class</th>
-              <th class="p-2">Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b">
-              <td class="p-2">Saturday</td>
-              <td class="p-2">Grade 12 Chemistry</td>
-              <td class="p-2">09:00 - 10:30</td>
-            </tr>
-            <tr class="border-b">
-              <td class="p-2">Sunday</td>
-              <td class="p-2">Grade 10 Chemistry</td>
-              <td class="p-2">10:45 - 12:15</td>
-            </tr>
-            <!-- Add more rows if needed -->
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Attendance -->
-      <div class="bg-white shadow-md p-6 rounded-md mb-10">
-        <h3 class="text-xl font-bold mb-4">Take Attendance</h3>
-        <div class="flex flex-col md:flex-row gap-4">
-          <select class="border px-4 py-2 rounded-md">
-            <option>Grade 10</option>
-            <option>Grade 12</option>
-          </select>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded-md">
-            Mark Attendance
-          </button>
-        </div>
-      </div>
-
-      <!-- Grade Table -->
-      <div class="bg-white shadow-md p-6 rounded-md mb-10">
-        <h3 class="text-xl font-bold mb-4">Grade List</h3>
-        <table class="w-full text-left border-collapse">
-          <thead class="bg-gray-200">
-            <tr>
-              <th class="p-2">Name</th>
-              <th class="p-2">Class</th>
-              <th class="p-2">Grade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b">
-              <td class="p-2">Ali Ahmadi</td>
-              <td class="p-2">Grade 10</td>
-              <td class="p-2">95</td>
-            </tr>
-            <tr class="border-b">
-              <td class="p-2">Fatima Qaderi</td>
-              <td class="p-2">Grade 12</td>
-              <td class="p-2">89</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Messages -->
-      <div class="bg-white shadow-md p-6 rounded-md mb-10">
-        <h3 class="text-xl font-bold mb-4">Send Message</h3>
-        <textarea
-          class="w-full border p-3 rounded-md mb-3"
-          rows="3"
-          placeholder="Type your message..."
-        ></textarea>
+      <!-- فیلتر و جستجو -->
+      <div class="flex flex-wrap gap-4 mb-6 justify-between items-center">
+        <input
+          type="text"
+          placeholder="جستجو بر اساس نام یا مضمون..."
+          class="border px-4 py-2 rounded-md w-[60%]"
+        />
+        <select class="border px-4 py-2 rounded-md">
+          <option>همه صنف‌ها</option>
+          <option>صنف 10</option>
+          <option>صنف 11</option>
+          <option>صنف 12</option>
+        </select>
         <button class="bg-green-500 text-white px-4 py-2 rounded-md">
-          Send
+          افزودن معلم جدید
         </button>
       </div>
 
-      <!-- Files Section -->
-      <div class="bg-white shadow-md p-6 rounded-md mb-10">
-        <h3 class="text-xl font-bold mb-4">Teaching Materials</h3>
-        <input type="file" class="mb-4" />
-        <ul class="list-disc pl-6">
-          <li>Chemistry_Lesson_1.pdf</li>
-          <li>Chemistry_Lesson_2.pdf</li>
-        </ul>
-      </div>
-
-      <!-- Announcements -->
-      <div class="bg-white shadow-md p-6 rounded-md">
-        <h3 class="text-xl font-bold mb-4">Announcements</h3>
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>Meeting on Thursday at 2 PM</li>
-          <li>New exam guidelines shared by principal</li>
-        </ul>
+      <!-- جدول معلم‌ها -->
+      <div class="bg-white shadow-md rounded-md overflow-x-auto">
+        <table class="min-w-full text-left">
+          <thead class="bg-blue-200 text-gray-900">
+            <tr>
+              <th class="py-2 px-4">نام</th>
+              <th class="py-2 px-4">مضمون</th>
+              <th class="py-2 px-4">صنف</th>
+              <th class="py-2 px-4">وضعیت</th>
+              <th class="py-2 px-4">عملیات</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white text-gray-700">
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">آقای صالحی</td>
+              <td class="py-2 px-4">کیمیا</td>
+              <td class="py-2 px-4">صنف 12</td>
+              <td class="py-2 px-4 text-green-600">فعال</td>
+              <td class="py-2 px-4 flex gap-2">
+                <button
+                  class="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+                >
+                  نمایش
+                </button>
+                <button
+                  class="bg-yellow-400 text-white px-3 py-1 rounded text-sm"
+                >
+                  ویرایش
+                </button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">
+                  حذف
+                </button>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">خانم نظری</td>
+              <td class="py-2 px-4">انگلیسی</td>
+              <td class="py-2 px-4">صنف 10</td>
+              <td class="py-2 px-4 text-green-600">فعال</td>
+              <td class="py-2 px-4 flex gap-2">
+                <button
+                  class="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+                >
+                  نمایش
+                </button>
+                <button
+                  class="bg-yellow-400 text-white px-3 py-1 rounded text-sm"
+                >
+                  ویرایش
+                </button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">
+                  حذف
+                </button>
+              </td>
+            </tr>
+            <!-- معلم‌های دیگر -->
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
