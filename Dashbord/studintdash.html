@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <div class="p-6 font-kalam bg-gray-100 min-h-screen">
+      <h2 class="text-2xl font-bold mb-4 text-center">Student List</h2>
+
+      <!-- Filter and Search -->
+      <div class="flex flex-wrap gap-4 mb-6 justify-between items-center">
+        <input
+          type="text"
+          placeholder="Search by name or grade..."
+          class="border px-4 py-2 rounded-md w-[60%]"
+        />
+        <select class="border px-4 py-2 rounded-md">
+          <option>All Grades</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+        </select>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+          Add New Student
+        </button>
+      </div>
+
+      <!-- Students Table -->
+      <div class="bg-white shadow-md rounded-md overflow-x-auto">
+        <table class="min-w-full text-left">
+          <thead class="bg-green-200 text-gray-900">
+            <tr>
+              <th class="py-2 px-4">Name</th>
+              <th class="py-2 px-4">Grade</th>
+              <th class="py-2 px-4">Status</th>
+              <th class="py-2 px-4">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white text-gray-700">
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">Ali Reza</td>
+              <td class="py-2 px-4">Grade 10</td>
+              <td class="py-2 px-4 text-green-600">Active</td>
+              <td class="py-2 px-4 flex gap-2">
+                <button
+                  class="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+                >
+                  View
+                </button>
+                <button
+                  class="bg-yellow-400 text-white px-3 py-1 rounded text-sm"
+                >
+                  Edit
+                </button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">Sara Esmaili</td>
+              <td class="py-2 px-4">Grade 11</td>
+              <td class="py-2 px-4 text-yellow-600">Inactive</td>
+              <td class="py-2 px-4 flex gap-2">
+                <button
+                  class="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+                >
+                  View
+                </button>
+                <button
+                  class="bg-yellow-400 text-white px-3 py-1 rounded text-sm"
+                >
+                  Edit
+                </button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">Mohammad Ali</td>
+              <td class="py-2 px-4">Grade 12</td>
+              <td class="py-2 px-4 text-green-600">Active</td>
+              <td class="py-2 px-4 flex gap-2">
+                <button
+                  class="bg-blue-500 text-white px-3 py-1 rounded text-sm"
+                >
+                  View
+                </button>
+                <button
+                  class="bg-yellow-400 text-white px-3 py-1 rounded text-sm"
+                >
+                  Edit
+                </button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">
+                  Delete
+                </button>
+              </td>
+            </tr>
+            <!-- More students -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -16,6 +16,7 @@
     --color-yellow-200: oklch(0.945 0.129 101.54);
     --color-yellow-300: oklch(0.905 0.182 98.111);
     --color-yellow-400: oklch(0.852 0.199 91.936);
+    --color-yellow-600: oklch(0.681 0.162 75.834);
     --color-lime-300: oklch(0.897 0.196 126.665);
     --color-green-200: oklch(0.925 0.084 155.995);
     --color-green-400: oklch(0.792 0.209 151.711);
@@ -3247,6 +3248,9 @@
   .text-purple-700 {
     color: var(--color-purple-700);
   }
+  .text-purple-800 {
+    color: var(--color-purple-800);
+  }
   .text-red-600 {
     color: var(--color-red-600);
   }
@@ -3255,6 +3259,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-yellow-600 {
+    color: var(--color-yellow-600);
   }
   .capitalize {
     text-transform: capitalize;
@@ -3884,6 +3891,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-700);
+      }
+    }
+  }
+  .hover\:text-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-600);
       }
     }
   }

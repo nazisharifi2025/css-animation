@@ -15,7 +15,7 @@
                 <img src="../sharifi-hi/imgin/images (3).png" class="h-[60px] w-[60px] rounded-[50%] " alt="">
                 <strong class=" mx-auto text-[10px] mt-4 text-black">Sharifi High School</strong>
             </div>
-          <div class="flex space-x-2 justify-between text-purple-600 hover:bg-blue-100 hover:px-1 hover:py-2 hover:rounded-[9px]"> 
+          <div class="flex space-x-2 justify-between text-black hover:bg-blue-100 hover:px-1 hover:py-2 hover:rounded-[9px]"> 
             <strong>Dashboard</strong>
             <span class="material-symbols-outlined">
                 home
@@ -26,8 +26,8 @@
                <span class="material-symbols-outlined">
                ad_units</span>
                 </div>
-                <div class="flex space-x-2 justify-between hover:bg-blue-100 hover:px-1 hover:py-2 hover:rounded-[9px]"> 
-                    <strong class="text-gray-950">Teachers</strong>
+                <div class="flex space-x-2 justify-between text-purple-800 hover:bg-blue-100 hover:px-1 hover:py-2 hover:rounded-[9px]"> 
+                    <strong>Teachers</strong>
                     <span class="material-symbols-outlined">
                         person_book
                         </span>
@@ -213,6 +213,238 @@
                 </div>
                 
             </div>
+            <!-- page -->
+            <div class="p-6 font-kalam bg-gray-100 min-h-screen">
+                <h2 class="text-2xl font-bold mb-4 text-center">List of All Teachers</h2>
+              
+                <!-- Filter and Search -->
+                <div class="flex flex-wrap gap-4 mb-6 justify-between items-center">
+                  <input type="text" placeholder="Search by name or subject..." class="border px-4 py-2 rounded-md w-[60%]">
+                  <select class="border px-4 py-2 rounded-md">
+                    <option>All Grades</option>
+                    <option>Grade 12</option>
+                    <option>Grade 11</option>
+                    <option>Grade 10</option>
+                    <option>Grade 9</option>
+                    <option>Grade 8</option>
+                    <option>Grade 7</option>
+                    <option>Grade 6</option>
+                    <option>Grade 5</option>
+                    <option>Grade 4</option>
+                    <option>Grade 3</option>
+                    <option>Grade 2</option>
+                    <option>Grade 1</option>
+                  </select>
+                  <button class="bg-green-500 text-white px-4 py-2 rounded-md">Add New Teacher</button>
+                </div>
+              
+                <!-- Teachers Table -->
+                <div class="bg-white shadow-md rounded-md overflow-x-auto">
+                  <table class="min-w-full text-left">
+                    <thead class="bg-blue-200 text-gray-900">
+                      <tr>
+                        <th class="py-2 px-4">Name</th>
+                        <th class="py-2 px-4">Subject</th>
+                        <th class="py-2 px-4">Grade</th>
+                        <th class="py-2 px-4">Status</th>
+                        <th class="py-2 px-4">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white text-gray-700">
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Mr. Salehi</td>
+                        <td class="py-2 px-4">Chemistry</td>
+                        <td class="py-2 px-4">Grade 12</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 11</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 10</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 9</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 8</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 7</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 6</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 5</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 4</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 3</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 2</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 1</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 12</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 10</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 9</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 8</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      <tr class="border-b hover:bg-gray-100">
+                        <td class="py-2 px-4">Ms. Nazari</td>
+                        <td class="py-2 px-4">English</td>
+                        <td class="py-2 px-4">Grade 7</td>
+                        <td class="py-2 px-4 text-green-600">Active</td>
+                        <td class="py-2 px-4 flex gap-2">
+                          <button class="bg-gray-300 text-white px-3 py-1 rounded text-sm">View</button>
+                          <button class="bg-gray-700 text-white px-3 py-1 rounded text-sm">Edit</button>
+                          <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Delete</button>
+                        </td>
+                      </tr>
+                      
+                      <!-- More teachers -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
         <!-- table endded -->
         </div>
     </div>
