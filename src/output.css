@@ -9,6 +9,7 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-700: oklch(0.505 0.213 27.518);
+    --color-amber-700: oklch(0.555 0.163 48.998);
     --color-amber-950: oklch(0.279 0.077 45.635);
     --color-yellow-300: oklch(0.905 0.182 98.111);
     --color-yellow-400: oklch(0.852 0.199 91.936);
@@ -96,7 +97,7 @@
     );
     --color-bgcon: rgba(255, 255, 255, 0.3);
     --color-bgfi: rgba(255, 255, 255, 0.1);
-    --color-naz: rgba(0, 0, 0, 0.3);
+    --color-naz: rgba(255, 255, 255, 0.5);
     --font-kalam: "Kalam-Regular", cursive;
   }
 }
@@ -533,9 +534,6 @@
   .mt-\[20px\] {
     margin-top: 20px;
   }
-  .mr-0 {
-    margin-right: calc(var(--spacing) * 0);
-  }
   .mr-16 {
     margin-right: calc(var(--spacing) * 16);
   }
@@ -718,6 +716,9 @@
   }
   .h-18 {
     height: calc(var(--spacing) * 18);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
@@ -2400,9 +2401,6 @@
   .border-white {
     border-color: var(--color-white);
   }
-  .border-b-white {
-    border-bottom-color: var(--color-white);
-  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -3254,9 +3252,6 @@
   .decoration-wavy {
     text-decoration-style: wavy;
   }
-  .decoration-0 {
-    text-decoration-thickness: 0px;
-  }
   .decoration-auto {
     text-decoration-thickness: auto;
   }
@@ -3632,6 +3627,13 @@
   .transform-view {
     transform-box: view-box;
   }
+  .group-hover\:block {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
   .group-hover\:translate-y-0 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -3680,6 +3682,13 @@
       @media (hover: hover) {
         border-bottom-style: var(--tw-border-style);
         border-bottom-width: 2px;
+      }
+    }
+  }
+  .hover\:bg-amber-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-700);
       }
     }
   }
@@ -3743,13 +3752,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-purple-500);
-      }
-    }
-  }
-  .hover\:bg-white {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-white);
       }
     }
   }
