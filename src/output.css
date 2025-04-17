@@ -683,6 +683,9 @@
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
   }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
@@ -982,6 +985,9 @@
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
+  }
+  .h-\[7-vh\] {
+    height: 7-vh;
   }
   .h-\[20px\] {
     height: 20px;
