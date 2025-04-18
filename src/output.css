@@ -99,6 +99,8 @@
     --color-bgcon: rgba(255, 255, 255, 0.3);
     --color-bgfi: rgba(255, 255, 255, 0.1);
     --color-naz: rgba(255, 255, 255, 0.5);
+    --color-Dash: rgb(12, 14, 12);
+    --color-nav1: rgb(12, 14, 34);
     --font-kalam: "Kalam-Regular", cursive;
   }
 }
@@ -2554,6 +2556,9 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-Dash {
+    background-color: var(--color-Dash);
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
@@ -2622,6 +2627,9 @@
   }
   .bg-green-600 {
     background-color: var(--color-green-600);
+  }
+  .bg-nav1 {
+    background-color: var(--color-nav1);
   }
   .bg-naz {
     background-color: var(--color-naz);
