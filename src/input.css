@@ -5,8 +5,11 @@
   --color-bgfi: rgba(255, 255, 255, 0.1);
   --color-naz: rgba(255, 255, 255, 0.5);
   --color-coffe: rgba(255, 255, 255, 0.9);
-  --color-Dash: rgb(12, 14, 12);
-  --color-nav1: rgb(12, 14, 34);
+  --color-nav1: rgb(37, 22, 74);
+  --color-nav2: rgb(10, 16, 80);
+  --color-hnav: rgb(37, 22, 90);
+  --color-navar1: rgb(18, 0, 50);
+  --color-um: rgb(32, 17, 61);
   --color-mint-500: oklch(0.72 0.11 178);
   --font-kalam: "Kalam-Regular", cursive;
 }
