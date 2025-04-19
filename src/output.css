@@ -34,7 +34,6 @@
     --color-blue-600: oklch(0.546 0.245 262.881);
     --color-blue-700: oklch(0.488 0.243 264.376);
     --color-blue-800: oklch(0.424 0.199 265.638);
-    --color-blue-950: oklch(0.282 0.091 267.935);
     --color-indigo-500: oklch(0.585 0.233 277.117);
     --color-violet-500: oklch(0.606 0.25 292.717);
     --color-violet-700: oklch(0.491 0.27 292.581);
@@ -106,6 +105,9 @@
     --color-nav1: rgb(37, 22, 74);
     --color-navg: rgb(27, 3, 52);
     --color-butten: rgb(63, 24, 151);
+    --color-profiel: rgb(36, 24, 82);
+    --color-vNav: rgb(18, 9, 63);
+    --color-nav2: rgb(10, 16, 80);
     --color-navar1: rgb(18, 0, 50);
     --font-kalam: "Kalam-Regular", cursive;
   }
@@ -549,6 +551,9 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
+  .my-7 {
+    margin-block: calc(var(--spacing) * 7);
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
@@ -563,6 +568,9 @@
   }
   .my-auto {
     margin-block: auto;
+  }
+  .-mt-56 {
+    margin-top: calc(var(--spacing) * -56);
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -993,11 +1001,17 @@
   .h-\[120px\] {
     height: 120px;
   }
+  .h-\[120vh\] {
+    height: 120vh;
+  }
   .h-\[130px\] {
     height: 130px;
   }
   .h-\[130vh\] {
     height: 130vh;
+  }
+  .h-\[140px\] {
+    height: 140px;
   }
   .h-\[150vh\] {
     height: 150vh;
@@ -1205,6 +1219,9 @@
   }
   .w-\[130px\] {
     width: 130px;
+  }
+  .w-\[140px\] {
+    width: 140px;
   }
   .w-\[180px\] {
     width: 180px;
@@ -2407,11 +2424,17 @@
   .rounded-\[7px\] {
     border-radius: 7px;
   }
+  .rounded-\[8px\] {
+    border-radius: 8px;
+  }
   .rounded-\[9px\] {
     border-radius: 9px;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[12px\] {
+    border-radius: 12px;
   }
   .rounded-\[50\%\] {
     border-radius: 50%;
@@ -2585,11 +2608,17 @@
   .border-black {
     border-color: var(--color-black);
   }
+  .border-butten {
+    border-color: var(--color-butten);
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
   .border-gray-400 {
     border-color: var(--color-gray-400);
+  }
+  .border-nav2 {
+    border-color: var(--color-nav2);
   }
   .border-white {
     border-color: var(--color-white);
@@ -2642,9 +2671,6 @@
   .bg-blue-800 {
     background-color: var(--color-blue-800);
   }
-  .bg-blue-950 {
-    background-color: var(--color-blue-950);
-  }
   .bg-butten {
     background-color: var(--color-butten);
   }
@@ -2696,6 +2722,9 @@
   .bg-naz {
     background-color: var(--color-naz);
   }
+  .bg-profiel {
+    background-color: var(--color-profiel);
+  }
   .bg-purple-800 {
     background-color: var(--color-purple-800);
   }
@@ -2713,6 +2742,9 @@
   }
   .bg-red-700 {
     background-color: var(--color-red-700);
+  }
+  .bg-vNav {
+    background-color: var(--color-vNav);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -3055,6 +3087,9 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-16 {
+    padding-inline: calc(var(--spacing) * 16);
+  }
   .px-24 {
     padding-inline: calc(var(--spacing) * 24);
   }
@@ -3075,6 +3110,9 @@
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -3249,6 +3287,9 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
   .leading-8 {
     --tw-leading: calc(var(--spacing) * 8);
     line-height: calc(var(--spacing) * 8);
@@ -3268,6 +3309,10 @@
   .leading-20 {
     --tw-leading: calc(var(--spacing) * 20);
     line-height: calc(var(--spacing) * 20);
+  }
+  .leading-60 {
+    --tw-leading: calc(var(--spacing) * 60);
+    line-height: calc(var(--spacing) * 60);
   }
   .leading-\[80\%\] {
     --tw-leading: 80%;
@@ -4048,6 +4093,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-green-700);
+      }
+    }
+  }
+  .hover\:bg-nav2 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-nav2);
       }
     }
   }
