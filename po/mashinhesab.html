@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ماشین حساب بدون eval</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-xl shadow-md w-80">
+      <input
+        id="display"
+        type="text"
+        class="w-full text-right text-2xl p-3 border rounded mb-4"
+        disabled
+      />
+
+      <div class="grid grid-cols-4 gap-3">
+        <button
+          class="bg-red-200 hover:bg-red-300 text-xl rounded p-3"
+          onclick="clearDisplay()"
+        >
+          C
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('/')"
+        >
+          /
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('*')"
+        >
+          *
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('-')"
+        >
+          -
+        </button>
+
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('7')"
+        >
+          7
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('8')"
+        >
+          8
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('9')"
+        >
+          9
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('+')"
+        >
+          +
+        </button>
+
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('4')"
+        >
+          4
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('5')"
+        >
+          5
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('6')"
+        >
+          6
+        </button>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white text-xl rounded p-3"
+          onclick="calculate()"
+        >
+          =
+        </button>
+
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('1')"
+        >
+          1
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('2')"
+        >
+          2
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3"
+          onclick="appendToDisplay('3')"
+        >
+          3
+        </button>
+        <button
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 col-span-2"
+          onclick="appendToDisplay('0')"
+        >
+          0
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const display = document.getElementById("display");
+
+      function appendToDisplay(value) {
+        display.value += value;
+      }
+
+      function clearDisplay() {
+        display.value = "";
+      }
+
+      function calculate() {
+        const input = display.value;
+
+        // پیدا کردن عملگر و جدا کردن دو عدد
+        let operator;
+        if (input.includes("+")) operator = "+";
+        else if (input.includes("-")) operator = "-";
+        else if (input.includes("*")) operator = "*";
+        else if (input.includes("/")) operator = "/";
+        else {
+          display.value = "خطا!";
+          return;
+        }
+
+        const [num1, num2] = input.split(operator).map(Number);
+
+        // اگر عدد نبود یا تقسیم بر صفر شد
+        if (isNaN(num1) || isNaN(num2)) {
+          display.value = "خطا!";
+          return;
+        }
+
+        let result;
+        if (operator === "+") result = num1 + num2;
+        else if (operator === "-") result = num1 - num2;
+        else if (operator === "*") result = num1 * num2;
+        else if (operator === "/") {
+          if (num2 === 0) {
+            display.value = "تقسیم بر صفر!";
+            return;
+          }
+          result = num1 / num2;
+        }
+
+        display.value = result;
+      }
+    </script>
+  </body>
+</html>

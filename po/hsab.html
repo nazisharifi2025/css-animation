@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ماشین حساب</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-6 rounded-xl shadow-lg w-80">
+      <input
+        id="display"
+        type="text"
+        class="w-full text-right text-2xl p-3 border rounded mb-4"
+        disabled
+      />
+
+      <div class="grid grid-cols-4 gap-3">
+        <!-- ردیف اول -->
+        <button
+          id="clear"
+          class="bg-red-200 hover:bg-red-300 text-xl rounded p-3 text-center"
+        >
+          C
+        </button>
+        <button
+          data-value="/"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          /
+        </button>
+        <button
+          data-value="*"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          *
+        </button>
+        <button
+          data-value="-"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          -
+        </button>
+
+        <!-- ردیف دوم -->
+        <button
+          data-value="7"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          7
+        </button>
+        <button
+          data-value="8"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          8
+        </button>
+        <button
+          data-value="9"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          9
+        </button>
+        <button
+          data-value="+"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          +
+        </button>
+
+        <!-- ردیف سوم -->
+        <button
+          data-value="4"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          4
+        </button>
+        <button
+          data-value="5"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          5
+        </button>
+        <button
+          data-value="6"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          6
+        </button>
+        <button
+          id="equals"
+          rowspan="2"
+          class="bg-green-500 hover:bg-green-600 text-white text-xl rounded p-3 text-center row-span-2"
+        >
+          =
+        </button>
+
+        <!-- ردیف چهارم -->
+        <button
+          data-value="1"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          1
+        </button>
+        <button
+          data-value="2"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          2
+        </button>
+        <button
+          data-value="3"
+          class="bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          3
+        </button>
+
+        <!-- ردیف پنجم -->
+        <button
+          data-value="0"
+          class="col-span-2 bg-gray-200 hover:bg-gray-300 text-xl rounded p-3 text-center"
+        >
+          0
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const display = document.getElementById("display");
+      const buttons = document.querySelectorAll("button[data-value]");
+      const clearBtn = document.getElementById("clear");
+      const equalsBtn = document.getElementById("equals");
+
+      // اضافه‌کردن رویداد کلیک به دکمه‌ها
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const value = button.getAttribute("data-value");
+          appendToDisplay(value);
+        });
+      });
+
+      // دکمه Clear
+      clearBtn.addEventListener("click", () => {
+        display.value = "";
+      });
+
+      // دکمه مساوی
+      equalsBtn.addEventListener("click", () => {
+        try {
+          display.value = eval(display.value);
+        } catch {
+          display.value = "خطا!";
+        }
+      });
+
+      // تابع اضافه کردن به نمایشگر
+      function appendToDisplay(value) {
+        display.value += value;
+      }
+    </script>
+  </body>
+</html>
