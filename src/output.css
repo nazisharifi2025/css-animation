@@ -3246,6 +3246,10 @@
     --tw-leading: calc(var(--spacing) * 16);
     line-height: calc(var(--spacing) * 16);
   }
+  .leading-20 {
+    --tw-leading: calc(var(--spacing) * 20);
+    line-height: calc(var(--spacing) * 20);
+  }
   .leading-\[80\%\] {
     --tw-leading: 80%;
     line-height: 80%;
